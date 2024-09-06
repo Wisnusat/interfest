@@ -30,12 +30,12 @@
 
         <ul>
           <li>
-            <router-link to="/" title="Home">.is()</router-link>
+            <router-link to="/" title="Home">.home()</router-link>
           </li>
           <li>
             <router-link to="/about" title="About me">.about()</router-link>
           </li>
-          <li>
+          <!-- <li>
             <a :href="`mailto:${data.email}`" title="Send me an email"
               >.email()</a
             >
@@ -45,7 +45,7 @@
               {{ link.label || null }}
               <component v-if="link.icon" :is="link.icon" />
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>
@@ -54,12 +54,12 @@
 
 <script>
 import { fetchData } from '@/utils'
-import LinkedInIcon from './Icon/LinkedInIcon.vue'
-import GithubIcon from './Icon/GithubIcon.vue'
+// import LinkedInIcon from './Icon/LinkedInIcon.vue'
+// import GithubIcon from './Icon/GithubIcon.vue'
 
 export default {
   name: 'HeaderSection',
-  components: { LinkedInIcon, GithubIcon },
+  // components: { LinkedInIcon, GithubIcon },
   data() {
     return {
       data: {},

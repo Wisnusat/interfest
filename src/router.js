@@ -5,8 +5,8 @@ import NProgress from 'nprogress'
 
 Vue.use(Router)
 
-const TITLE = 'iuri.is'
-const URL = 'https://iuri.is/'
+const TITLE = 'interfest'
+const URL = 'https://interfest/'
 const ABOUT =
   'Frontend developer heavily influenced by storytelling, interactions, and UX. Addicted to music, visual arts, and games.'
 
@@ -16,7 +16,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: '.is()',
+      name: '.interfest()',
       component: Home,
       meta: {
         title: TITLE,
